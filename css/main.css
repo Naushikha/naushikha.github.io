@@ -716,23 +716,28 @@ label > input[type="radio"] {
  * Style Placeholder Text  
  * ----------------------------------------------------------- */
 ::-webkit-input-placeholder {
-	color: #828282;
+	color: #fff;
+	font-size: 1.5rem;
 }
 
 :-moz-placeholder {
-	color: #828282;  /* Firefox 18- */
+	color: #fff;
+	font-size: 1.5rem;  /* Firefox 18- */
 }
 
 ::-moz-placeholder {
-	color: #828282;  /* Firefox 19+ */
+	color: #fff;
+	font-size: 1.5rem;  /* Firefox 19+ */
 }
 
 :-ms-input-placeholder {
-	color: #828282;
+	color: #fff;
+	font-size: 1.5rem;
 }
 
 .placeholder {
-	color: #828282 !important;
+	color: #fff !important;
+	font-size: 1.5rem;
 }
 
 /* -----------------------------------------------------------
@@ -1642,7 +1647,7 @@ header .header-logo a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	min-height: 804px;
+	/* min-height: 804px; */ /* prevent the extra scrolling */
 	position: relative;
 }
 
@@ -2790,11 +2795,11 @@ header .header-logo a {
 }
 
 #contact .section-intro h3 {
-	color: #7c3b08;
+	color: #e67722;
 }
 
 #contact .section-intro p.lead {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.6);
 }
 
 /* contact form */
@@ -2874,10 +2879,10 @@ header .header-logo a {
 #contact input[type="email"],
 #contact textarea {
 	width: 100%;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.9);
 	margin-bottom: 0;
 	border: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 #contact input[type="text"],
@@ -2890,7 +2895,7 @@ header .header-logo a {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #4C2405;
+	border-color: #ca6110;
 	color: #FFFFFF;
 }
 
@@ -2900,7 +2905,7 @@ header .header-logo a {
 }
 
 #contact textarea:focus {
-	border-color: #4C2405;
+	border-color: #ca6110;
 	color: #FFFFFF;
 }
 
@@ -2913,13 +2918,13 @@ header .header-logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #7c3b08;
+	background: #bb590e;
 	color: #FFFFFF;
 }
 
 #contact button.submitform:hover,
 #contact button.submitform:focus {
-	background: #4C2405;
+	background: #a14d0c;
 }
 
 #message-warning,
@@ -2980,7 +2985,7 @@ header .header-logo a {
 }
 
 .contact-info p {
-	color: #555;
+	color: rgb(173, 173, 173);
 }
 
 .contact-info .collapse {
