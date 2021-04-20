@@ -754,7 +754,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
 	border: none;
-	-webkit-text-fill-color: #7c3b08;
+	-webkit-text-fill-color: #f18b3c;
 	transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -2710,7 +2710,7 @@ header .header-logo a {
 }
 
 #stats .stat .icon-part {
-	color: #333;
+	color: #888;
 }
 
 #stats .stat .icon-part i {
@@ -2724,7 +2724,7 @@ header .header-logo a {
 }
 
 #stats .stat h3 {
-	color: #7c3b08;
+	color: #e67722;
 	font-size: 4.8rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -2925,6 +2925,7 @@ header .header-logo a {
 #contact button.submitform:hover,
 #contact button.submitform:focus {
 	background: #a14d0c;
+
 }
 
 #message-warning,
@@ -3167,4 +3168,13 @@ footer .footer-social li:last-child {
 		right: 0;
 	}
 
+}
+
+/* Home black on hover */
+.hover-black {
+	transition: 0.2s !important;
+}
+
+.hover-black:hover {
+	color: #ca6110 !important;
 }
