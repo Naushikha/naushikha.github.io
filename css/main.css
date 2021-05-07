@@ -1784,6 +1784,11 @@ header .header-logo a {
   margin-left: 0.3rem;
 }
 
+/* This makes the hello, there look more decent */
+.home-content-tablecell .row {
+  margin: 0 35px !important;
+}
+
 .scroll-icon {
   position: absolute;
   width: 60px;
@@ -1895,6 +1900,7 @@ header .header-logo a {
 
 @media only screen and (max-width: 600px) {
   #home {
+    background-position: left;
     min-height: 702px;
   }
 
