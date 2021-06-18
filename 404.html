@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's a 404 :/</title>
+  </head>
+  <body>
+    <center>
+      <h1 style="color: darkred">Well, well, well...</h1>
+      <h2 style="color: darkblue">You have reached a dead-end my friend!</h2>
+      <h2 style="color: darkblue">Here's a meme to cheer you up.</h2>
+      <div class="wrapper" style="height: 50vh">
+        <img id="meme" src="#" alt="A meme for you" height="100%" />
+      </div>
+      <a href="https://naushikha.com" style="text-decoration: none">
+        <h2><< Naushikha's Portfolio</h2>
+      </a>
+      Yes, this is a <b>404</b>. <br />
+      (<b>Not</b> a page you should refresh like a maniac to see memes :P )
+    </center>
+
+    <script>
+      const meme = document.getElementById("meme");
+      fetch("https://meme-api.herokuapp.com/gimme")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          meme.setAttribute("src", data.url);
+        });
+    </script>
+  </body>
+</html>
