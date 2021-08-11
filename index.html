@@ -211,19 +211,40 @@
             connect. Drop in a hello.
           </p>
 
-          <p>
+          <p style="margin-bottom: 0">
             <a
               href="mailto:hello@naushikha.com"
               class="button full-width animate-this"
               >Contact Me</a
             >
-            <a
-              href="data/CV_Naushikha_International.pdf"
-              target="_blank"
-              class="button button-primary full-width animate-this"
-              >Download CV</a
-            >
           </p>
+          <div class="cv-dropdown full-width">
+            <button
+              id="cv-download"
+              class="button button-primary full-width animate-this"
+              onclick="cvDownload()"
+            >
+              Download CV <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="cv-dropdown-list" class="cv-dropdown-content">
+              <a href="data/CV_Naushikha_International.pdf" target="_blank"
+                >International
+                <div style="float: right">🌎</div></a
+              >
+              <a href="data/CV_Naushikha_Local.pdf" target="_blank"
+                >Local Compact
+                <div style="float: right">🇱🇰</div></a
+              >
+              <a href="data/CV_Naushikha_Local_Additional.pdf" target="_blank"
+                >Local with Additional &nbsp;
+                <div style="float: right">🇱🇰</div></a
+              >
+              <a href="data/CV_Naushikha_Local_Extended.pdf" target="_blank"
+                >Local Extended
+                <div style="float: right">🇱🇰</div></a
+              >
+            </div>
+          </div>
         </div>
         <!-- end about-profile  -->
 
