@@ -249,6 +249,10 @@
     $("#contactForm").validate({
       /* submit via ajax */
       submitHandler: function (form) {
+        if (window.captchaOK == null) {
+          alert("Prove that you're not a bot first!");
+          return;
+        }
         var sLoader = $("#submit-loader");
         // https://github.com/formspree/formspree
         $.ajax({

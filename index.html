@@ -37,6 +37,7 @@
    ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- favicons
 	================================================== -->
@@ -992,6 +993,18 @@
                 required=""
               ></textarea>
             </div>
+
+            <br />
+            <div
+              class="g-recaptcha animate-this"
+              data-sitekey="6LdrlGEfAAAAANq7-muKvtF2EmXoib-fv-27E5Wl"
+              data-callback="correctCaptcha"
+            ></div>
+            <script>
+              function correctCaptcha(res) {
+                window.captchaOK = true;
+              }
+            </script>
 
             <div class="form-field animate-this">
               <button class="submitform">Submit</button>
